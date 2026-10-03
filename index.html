@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Space Before UTS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">a little space.</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#journal">Journal</a>
+            <a href="#reminder">Reminder</a>
+             <a href="#journalHistory">Saved</a>
+        </div>
+    </nav>
+ <section id="home" class="hero">
+
+        <p class="small-text">A little space for your UTS journey.</p>
+
+        <h1>
+            Weii, Urpann<br>
+                You've got this.
+        </h1>
+
+        <p class="description">
+             First time lu UTS sebagai MAHAsiswa. Jadi...<br>
+            Take your time, do what you can do, and trust yourself! <br>
+            Okee, let's take this UTS journey one step at a time ✰
+        </p>
+
+        <button onclick="showMessage()">
+            Start your journey
+        </button>
+
+        <div id="message"></div>
+
+    </section>
+<section id="journal">
+
+        <h2>How are you feeling today?</h2>
+
+        <p>
+            Baik sebelum maupun sesudah UTS <br>
+            Cerita aja apa yang lagi lu pikirin dan rasain <br>
+            Ngga harus dengan kalimat yang rapih<br>
+            Silakan cerita. IPK tidak akan terpengaruh:>
+
+        </p>
+
+        <textarea
+            placeholder="Tulis apa pun itu ya...">
+        </textarea>
+
+        <button onclick="saveJournal()">
+            Save my thoughts
+        </button>
+
+        <p id="savedMessage"></p>
+ 
+    </section>
+
+
+    <section id="reminder">
+
+        <h2>For Urpan Rojulan</h2>
+
+        <p id="notes">
+            you're doing better than you think.
+        </p>
+
+        <button onclick="changeNote()">
+            I need this today
+        </button>
+
+    </section>
+
+    </section>
+       <section id="journalHistory"></section>
+
+
+    <p id="notes">
+            You did it so well
+        </p>
+
+       <div id="journalHistory"></div>
+
+ </section>
+     
+    <footer>
+        Lu keren!! dan selalu!!!
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
